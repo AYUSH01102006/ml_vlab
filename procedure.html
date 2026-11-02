@@ -1,0 +1,2493 @@
+<!DOCTYPE html>
+<html lang="en"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwODcwMDg3ODcxMjQ3ODIzODEyMyIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2Y2ZmMxZDZkMmRhMzg0NDRfaW5kZXguaHRtbC0xMjcifSwiZXhwIjoxNzkzNjUyNTEwLCJpYXQiOjE3OTM2NDg5MTAsImFsZyI6IlJTMjU2In0.Q_WBg1lv5ts83nZVxyu4ocMQjo6gSX15qsX4u9B5Opqs6LOr6ar0JW9JAIovYTL7rn6w3_V8KhgrEciHqgFsfgB_XYCfVCPT8VGR2PvNywYwqY8n_ZUS1rHyYBFS4O1eH_Icf-mbnQzvdjQWcsGfdZi-g_bPDMwHhvQtAmk1adwmqW9Fk_fUm2ZVvTRwNROCt-pfMcRdR5uTJAFyjq6NDkgwYlDeh7kQVtgIVvutZzSY7L5ZfEQLH22s-7Dw3nUeYhr_jvxuCnMITnN8bsd_PPD4_O8oTXz85ghWB2HssixYvgtkM32dGf24qe0CyhiXr-xIPZrmynwDfrMvGU3uRQ","c_f6fc1d6d2da38444_index.html-127")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Virtual Lab - Exp 4: Regression &amp; Regularization</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <!-- JSZip for generating the Multi-Page Ready-to-Deploy ZIP archive directly in browser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .vlab-header-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #1d4ed8 100%);
+        }
+        .sidebar-link {
+            transition: all 0.2s ease;
+        }
+        .sidebar-link.active {
+            background-color: #eff6ff;
+            color: #1d4ed8;
+            border-right: 4px solid #1d4ed8;
+            font-weight: 600;
+        }
+        .sidebar-link:hover:not(.active) {
+            background-color: #f1f5f9;
+            color: #0f172a;
+        }
+        canvas {
+            cursor: crosshair;
+            touch-action: none;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .math-box {
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.bottom-5{bottom:1.25rem}.right-5{right:1.25rem}.top-0{top:0px}.z-20{z-index:20}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-1{margin-left:0.25rem}.ml-auto{margin-left:auto}.mr-1{margin-right:0.25rem}.mr-2{margin-right:0.5rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-3{margin-top:0.75rem}.mt-6{margin-top:1.5rem}.mt-2{margin-top:0.5rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-0\.5{height:0.125rem}.h-11{height:2.75rem}.h-16{height:4rem}.h-2\.5{height:0.625rem}.h-3{height:0.75rem}.h-72{height:18rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-11{width:2.75rem}.w-16{width:4rem}.w-2\.5{width:0.625rem}.w-3{width:0.75rem}.w-4{width:1rem}.w-6{width:1.5rem}.w-64{width:16rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.list-inside{list-style-position:inside}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-100 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(241 245 249 / var(--tw-divide-opacity, 1))}.divide-slate-200 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(226 232 240 / var(--tw-divide-opacity, 1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.rounded-r-xl{border-top-right-radius:0.75rem;border-bottom-right-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-l-4{border-left-width:4px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-amber-400\/30{border-color:rgb(251 191 36 / 0.3)}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-blue-400\/30{border-color:rgb(96 165 250 / 0.3)}.border-blue-600{--tw-border-opacity:1;border-color:rgb(37 99 235 / var(--tw-border-opacity, 1))}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.border-indigo-100{--tw-border-opacity:1;border-color:rgb(224 231 255 / var(--tw-border-opacity, 1))}.border-indigo-200{--tw-border-opacity:1;border-color:rgb(199 210 254 / var(--tw-border-opacity, 1))}.border-rose-200{--tw-border-opacity:1;border-color:rgb(254 205 211 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-200\/70{border-color:rgb(226 232 240 / 0.7)}.border-slate-200\/80{border-color:rgb(226 232 240 / 0.8)}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-transparent{border-color:transparent}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-amber-400\/20{background-color:rgb(251 191 36 / 0.2)}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-500\/30{background-color:rgb(59 130 246 / 0.3)}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-50\/70{background-color:rgb(236 253 245 / 0.7)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255 / var(--tw-bg-opacity, 1))}.bg-indigo-50\/60{background-color:rgb(238 242 255 / 0.6)}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234 / var(--tw-bg-opacity, 1))}.bg-rose-100{--tw-bg-opacity:1;background-color:rgb(255 228 230 / var(--tw-bg-opacity, 1))}.bg-rose-50{--tw-bg-opacity:1;background-color:rgb(255 241 242 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/50{background-color:rgb(15 23 42 / 0.5)}.bg-slate-900\/60{background-color:rgb(15 23 42 / 0.6)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-blue-50\/70{background-color:rgb(239 246 255 / 0.7)}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-blue-50{--tw-gradient-from:#eff6ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(239 246 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-50{--tw-gradient-from:#f8fafc var(--tw-gradient-from-position);--tw-gradient-to:rgb(248 250 252 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-indigo-50{--tw-gradient-to:#eef2ff var(--tw-gradient-to-position)}.to-white{--tw-gradient-to:#fff var(--tw-gradient-to-position)}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-2\.5{padding:0.625rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-3{padding-bottom:0.75rem}.pb-4{padding-bottom:1rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11 / var(--tw-text-opacity, 1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-blue-100{--tw-text-opacity:1;color:rgb(219 234 254 / var(--tw-text-opacity, 1))}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-emerald-950{--tw-text-opacity:1;color:rgb(2 44 34 / var(--tw-text-opacity, 1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.text-indigo-700{--tw-text-opacity:1;color:rgb(67 56 202 / var(--tw-text-opacity, 1))}.text-indigo-900{--tw-text-opacity:1;color:rgb(49 46 129 / var(--tw-text-opacity, 1))}.text-purple-700{--tw-text-opacity:1;color:rgb(126 34 206 / var(--tw-text-opacity, 1))}.text-purple-800{--tw-text-opacity:1;color:rgb(107 33 168 / var(--tw-text-opacity, 1))}.text-rose-700{--tw-text-opacity:1;color:rgb(190 18 60 / var(--tw-text-opacity, 1))}.text-rose-800{--tw-text-opacity:1;color:rgb(159 18 57 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-blue-900{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.decoration-blue-300{-webkit-text-decoration-color:#93c5fd;text-decoration-color:#93c5fd}.decoration-emerald-300{-webkit-text-decoration-color:#6ee7b7;text-decoration-color:#6ee7b7}.decoration-indigo-300{-webkit-text-decoration-color:#a5b4fc;text-decoration-color:#a5b4fc}.accent-emerald-600{accent-color:#059669}.accent-purple-600{accent-color:#9333ea}.accent-blue-600{accent-color:#2563eb}.opacity-0{opacity:0}.opacity-40{opacity:0.4}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:border-slate-200:hover{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.hover\:bg-amber-300:hover{--tw-bg-opacity:1;background-color:rgb(252 211 77 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-100:hover{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-50:hover{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-400:hover{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-700:hover{--tw-bg-opacity:1;background-color:rgb(4 120 87 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-100:hover{--tw-bg-opacity:1;background-color:rgb(224 231 255 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-100:hover{--tw-bg-opacity:1;background-color:rgb(255 228 230 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-50:hover{--tw-bg-opacity:1;background-color:rgb(255 241 242 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.hover\:text-rose-600:hover{--tw-text-opacity:1;color:rgb(225 29 72 / var(--tw-text-opacity, 1))}.hover\:text-slate-700:hover{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:h-80{height:20rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.sm\:gap-3{gap:0.75rem}.sm\:p-5{padding:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:p-8{padding:2rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:flex{display:flex}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-8{grid-column:span 8 / span 8}.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:p-8{padding:2rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style></head>
+<body class="text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Top V-Lab Branding Header -->
+    <header class="vlab-header-gradient text-white shadow-lg sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center space-x-3">
+                <div class="w-11 h-11 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center text-amber-400 font-bold text-xl shadow-inner">
+                    <i class="fa-solid fa-flask-vial"></i>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs uppercase tracking-wider px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 font-semibold border border-amber-400/30">Virtual Labs • Machine Learning</span>
+                        <span class="text-xs px-2 py-0.5 rounded bg-blue-500/30 text-blue-100 font-medium border border-blue-400/30">CO3 • D12C</span>
+                    </div>
+                    <h1 class="text-base sm:text-lg font-bold tracking-tight text-white mt-0.5">
+                        Exp 04: Linear, Polynomial &amp; Ridge Regression Analysis
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Action buttons: URL Indicator + Download Multi-page ZIP -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <div class="hidden md:flex items-center bg-slate-900/60 border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-slate-300 font-mono">
+                    <i class="fa-solid fa-file-code text-blue-400 mr-2"></i>
+                    <span id="current-filename-badge">simulation.html</span>
+                </div>
+                <button onclick="downloadMultiPageZip()" id="zip-btn" class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold text-xs sm:text-sm px-3.5 py-2 rounded-lg shadow-md transition flex items-center gap-2"><i class="fa-solid fa-spinner fa-spin"></i> <span>Packing 7 HTML Pages...</span></button>
+                <!-- Mobile Menu Toggle -->
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Layout -->
+    <div class="flex-1 flex max-w-7xl w-full mx-auto relative">
+
+        <!-- Left Sidebar Navigation (IIT V-Lab Style) -->
+        <aside id="sidebar" class="w-64 bg-white border-r border-slate-200 flex-shrink-0 hidden lg:flex flex-col justify-between z-20">
+            <div class="py-4">
+                <div class="px-5 pb-3 mb-2 border-b border-slate-100">
+                    <p class="text-xs font-bold uppercase tracking-wider text-slate-400">Experiment Navigation</p>
+                </div>
+                <nav class="space-y-1" id="nav-links">
+                    <button onclick="switchPage('aim', 'index.html')" data-page="aim" class="sidebar-link w-full flex items-center px-5 py-3 text-sm text-left">
+                        <i class="fa-solid fa-bullseye w-6 text-center mr-2 text-blue-600"></i>
+                        <span>Aim &amp; Overview</span>
+                    </button>
+                    <button onclick="switchPage('theory', 'theory.html')" data-page="theory" class="sidebar-link w-full flex items-center px-5 py-3 text-sm text-left text-slate-600">
+                        <i class="fa-solid fa-book-open w-6 text-center mr-2 text-blue-600"></i>
+                        <span>Theory &amp; Math</span>
+                    </button>
+                    <button onclick="switchPage('pretest', 'pretest.html')" data-page="pretest" class="sidebar-link w-full flex items-center px-5 py-3 text-sm text-left text-slate-600">
+                        <i class="fa-solid fa-clipboard-question w-6 text-center mr-2 text-blue-600"></i>
+                        <span>Pre-Test Quiz</span>
+                    </button>
+                    <button onclick="switchPage('procedure', 'procedure.html')" data-page="procedure" class="sidebar-link w-full flex items-center px-5 py-3 text-sm text-left text-slate-600">
+                        <i class="fa-solid fa-list-check w-6 text-center mr-2 text-blue-600"></i>
+                        <span>Procedure</span>
+                    </button>
+                    <button onclick="switchPage('simulation', 'simulation.html')" data-page="simulation" class="sidebar-link w-full flex items-center px-5 py-3 text-sm text-left text-slate-600 active">
+                        <i class="fa-solid fa-sliders w-6 text-center mr-2 text-emerald-600"></i>
+                        <span>Simulation Lab</span>
+                        <span class="ml-auto bg-emerald-100 text-emerald-700 text-[10px] font-bold px-2 py-0.5 rounded-full">LIVE</span>
+                    </button>
+                    <button onclick="switchPage('posttest', 'posttest.html')" data-page="posttest" class="sidebar-link w-full flex items-center px-5 py-3 text-sm text-left text-slate-600">
+                        <i class="fa-solid fa-graduation-cap w-6 text-center mr-2 text-blue-600"></i>
+                        <span>Post-Test</span>
+                    </button>
+                    <button onclick="switchPage('team', 'team.html')" data-page="team" class="sidebar-link w-full flex items-center px-5 py-3 text-sm text-left text-slate-600">
+                        <i class="fa-solid fa-users w-6 text-center mr-2 text-indigo-600"></i>
+                        <span>Team Members</span>
+                    </button>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-drawer" class="fixed inset-0 bg-slate-900/50 z-40 hidden lg:hidden" onclick="toggleMobileMenu()">
+            <div class="w-64 bg-white h-full shadow-2xl p-4 flex flex-col justify-between" onclick="event.stopPropagation()">
+                <div>
+                    <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
+                        <span class="font-bold text-slate-800 text-sm">V-Lab Sections</span>
+                        <button onclick="toggleMobileMenu()" class="text-slate-400 hover:text-slate-700">
+                            <i class="fa-solid fa-xmark text-lg"></i>
+                        </button>
+                    </div>
+                    <div class="space-y-1" id="mobile-nav-links">
+                        <button onclick="switchPage('aim', 'index.html'); toggleMobileMenu();" class="w-full flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50">
+                            <i class="fa-solid fa-bullseye w-6 text-blue-600"></i> Aim &amp; Overview
+                        </button>
+                        <button onclick="switchPage('theory', 'theory.html'); toggleMobileMenu();" class="w-full flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50">
+                            <i class="fa-solid fa-book-open w-6 text-blue-600"></i> Theory &amp; Math
+                        </button>
+                        <button onclick="switchPage('pretest', 'pretest.html'); toggleMobileMenu();" class="w-full flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50">
+                            <i class="fa-solid fa-clipboard-question w-6 text-blue-600"></i> Pre-Test Quiz
+                        </button>
+                        <button onclick="switchPage('procedure', 'procedure.html'); toggleMobileMenu();" class="w-full flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50">
+                            <i class="fa-solid fa-list-check w-6 text-blue-600"></i> Procedure
+                        </button>
+                        <button onclick="switchPage('simulation', 'simulation.html'); toggleMobileMenu();" class="w-full flex items-center px-3 py-2.5 rounded-lg text-sm font-bold text-emerald-700 bg-emerald-50">
+                            <i class="fa-solid fa-sliders w-6 text-emerald-600"></i> Simulation Lab
+                        </button>
+                        <button onclick="switchPage('posttest', 'posttest.html'); toggleMobileMenu();" class="w-full flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50">
+                            <i class="fa-solid fa-graduation-cap w-6 text-blue-600"></i> Post-Test
+                        </button>
+                        <button onclick="switchPage('team', 'team.html'); toggleMobileMenu();" class="w-full flex items-center px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-blue-50">
+                            <i class="fa-solid fa-users w-6 text-indigo-600"></i> Team Members
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Dynamic Content Area -->
+        <main class="flex-1 p-4 sm:p-6 lg:p-8 overflow-y-auto">
+
+            <!-- ==================== PAGE 1: AIM (index.html) ==================== -->
+            <section id="page-aim" class="page-section space-y-6 hidden">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 sm:p-8">
+                    <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-6 border-b border-slate-100">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Experiment No. 04</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Aim of the Experiment</h2>
+                        </div>
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                            Course Outcome: CO3
+                        </span>
+                    </div>
+
+                    <!-- Highlighted Aim Statement -->
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-600 p-5 rounded-r-xl mb-8">
+                        <p class="text-base sm:text-lg font-semibold text-slate-800 leading-relaxed">
+                            "Implement <span class="text-blue-700 underline decoration-blue-300">Linear Regression</span>, <span class="text-indigo-700 underline decoration-indigo-300">Polynomial Regression</span>, and <span class="text-emerald-700 underline decoration-emerald-300">Ridge Regression</span> models and compare their prediction accuracy and overfitting behavior."
+                        </p>
+                    </div>
+
+                    <!-- Learning Objectives Grid -->
+                    <h3 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-lightbulb text-amber-500"></i>
+                        <span>Key Learning Objectives</span>
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/70">
+                            <div class="w-9 h-9 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold mb-3">1</div>
+                            <h4 class="font-bold text-slate-800 text-sm mb-1">Understand Underfitting</h4>
+                            <p class="text-xs text-slate-600 leading-relaxed">Observe how simple Linear Regression (d = 1) fails to capture non-linear patterns in curved datasets, resulting in high training and testing errors.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/70">
+                            <div class="w-9 h-9 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-bold mb-3">2</div>
+                            <h4 class="font-bold text-slate-800 text-sm mb-1">Visualize Overfitting</h4>
+                            <p class="text-xs text-slate-600 leading-relaxed">Increase the polynomial degree (d &gt; 8) to see how the model memorizes training noise—driving Training Error down while Testing Error explodes.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/70">
+                            <div class="w-9 h-9 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mb-3">3</div>
+                            <h4 class="font-bold text-slate-800 text-sm mb-1">Control with Ridge (L<sub>2</sub>)</h4>
+                            <p class="text-xs text-slate-600 leading-relaxed">Apply Ridge Regularization penalty (λ) to shrink large polynomial weights and restore a smooth, generalizable curve even at high degrees.</p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Start CTA -->
+                    <div class="flex flex-wrap items-center justify-between gap-4 p-5 rounded-xl bg-slate-900 text-white">
+                        <div>
+                            <h4 class="font-bold text-base">Ready to explore the models interactively?</h4>
+                            <p class="text-xs text-slate-300 mt-0.5">Read the theory first or jump straight into the interactive regression simulator.</p>
+                        </div>
+                        <div class="flex gap-3">
+                            <button onclick="switchPage('theory', 'theory.html')" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white text-xs sm:text-sm font-semibold transition">
+                                Read Theory <i class="fa-solid fa-arrow-right ml-1"></i>
+                            </button>
+                            <button onclick="switchPage('simulation', 'simulation.html')" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs sm:text-sm font-bold transition shadow">
+                                <i class="fa-solid fa-play mr-1"></i> Launch Simulation
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== PAGE 2: THEORY (theory.html) ==================== -->
+            <section id="page-theory" class="page-section space-y-6 hidden">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 sm:p-8 space-y-6">
+                    <div class="border-b border-slate-100 pb-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Theoretical Background</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Regression Models &amp; Regularization</h2>
+                    </div>
+
+                    <!-- 1. Linear Regression -->
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-blue-700 flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                            1. Linear Regression
+                        </h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Linear Regression models the relationship between an independent input variable <strong>x</strong> and a continuous target variable <strong>y</strong> using a straight line. It minimizes the sum of squared residuals (Ordinary Least Squares).
+                        </p>
+                        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center math-box text-base sm:text-lg font-semibold text-slate-800">
+                            ŷ = w<sub>0</sub> + w<sub>1</sub>x &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Cost J(w) = (1 / N) ∑ (y<sub>i</sub> − ŷ<sub>i</sub>)<sup>2</sup>
+                        </div>
+                        <p class="text-xs text-slate-500 italic">
+                            Limitation: When the underlying data follows a curve, a straight line has high bias and results in <strong>Underfitting</strong>.
+                        </p>
+                    </div>
+
+                    <!-- 2. Polynomial Regression -->
+                    <div class="space-y-2 pt-2">
+                        <h3 class="text-lg font-bold text-purple-700 flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+                            2. Polynomial Regression
+                        </h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            To capture non-linear curves, Polynomial Regression adds higher-order powers of the original feature (x<sup>2</sup>, x<sup>3</sup>, ..., x<sup>d</sup>) as new features and fits a linear model on those expanded features:
+                        </p>
+                        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center math-box text-base sm:text-lg font-semibold text-slate-800">
+                            ŷ = w<sub>0</sub> + w<sub>1</sub>x + w<sub>2</sub>x<sup>2</sup> + w<sub>3</sub>x<sup>3</sup> + ... + w<sub>d</sub>x<sup>d</sup>
+                        </div>
+                        <p class="text-xs text-slate-500 italic">
+                            Risk: If degree <strong>d</strong> is too large (e.g., d = 10), the curve wiggles wildly to pass through every training point, causing severe <strong>Overfitting</strong> (low Training MSE, very high Testing MSE).
+                        </p>
+                    </div>
+
+                    <!-- 3. Ridge Regression (L2 Regularization) -->
+                    <div class="space-y-2 pt-2">
+                        <h3 class="text-lg font-bold text-emerald-700 flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+                            3. Ridge Regression (L<sub>2</sub> Regularization)
+                        </h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Ridge Regression prevents overfitting in high-degree polynomials by adding an <strong>L<sub>2</sub> penalty term</strong> proportional to the square of the magnitude of coefficients (w<sub>j</sub><sup>2</sup>). Controlled by hyperparameter <strong>λ</strong> (Lambda):
+                        </p>
+                        <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4 text-center math-box text-base sm:text-lg font-semibold text-emerald-950">
+                            Cost J<sub>Ridge</sub>(w) = (1 / N) ∑ (y<sub>i</sub> − ŷ<sub>i</sub>)<sup>2</sup> + λ ∑ w<sub>j</sub><sup>2</sup>
+                        </div>
+                        <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 space-y-1 pt-1">
+                            <li>When <strong>λ = 0</strong>: Ridge behaves identically to standard Polynomial Regression.</li>
+                            <li>When <strong>λ &gt; 0</strong>: Large weights are penalized, forcing the high-degree curve to become smooth and reducing Test Error.</li>
+                            <li>When <strong>λ → ∞</strong>: All slope weights approach zero, flattening the curve towards the mean.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Comparison Summary Table -->
+                    <div class="pt-4">
+                        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-3">Quick Comparison Summary</h4>
+                        <div class="overflow-x-auto border border-slate-200 rounded-xl">
+                            <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                                <thead class="bg-slate-100 text-slate-700">
+                                    <tr>
+                                        <th class="p-3 border-b">Model Type</th>
+                                        <th class="p-3 border-b">Complexity Control</th>
+                                        <th class="p-3 border-b">Bias / Variance</th>
+                                        <th class="p-3 border-b">Typical Behavior on Curved Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-200">
+                                    <tr>
+                                        <td class="p-3 font-semibold text-blue-700">Linear Regression</td>
+                                        <td class="p-3">Fixed (d = 1)</td>
+                                        <td class="p-3">High Bias, Low Variance</td>
+                                        <td class="p-3"><span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800 font-medium">Underfits</span> non-linear patterns</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-purple-700">Polynomial (High d)</td>
+                                        <td class="p-3">Degree d</td>
+                                        <td class="p-3">Low Bias, High Variance</td>
+                                        <td class="p-3"><span class="px-2 py-0.5 rounded bg-rose-100 text-rose-800 font-medium">Overfits</span> noisy data points</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3 font-semibold text-emerald-700">Ridge Regression</td>
+                                        <td class="p-3">Degree d + Penalty λ</td>
+                                        <td class="p-3">Balanced Trade-off</td>
+                                        <td class="p-3"><span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-medium">Good Fit</span> via weight shrinkage</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== PAGE 3: PRE-TEST (pretest.html) ==================== -->
+            <section id="page-pretest" class="page-section space-y-6 hidden">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 sm:p-8">
+                    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4 mb-6">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Self-Assessment Before Lab</span>
+                            <h2 class="text-2xl font-extrabold text-slate-900 mt-1">Pre-Test Quiz</h2>
+                        </div>
+                        <div id="pretest-score-badge" class="hidden px-4 py-1.5 rounded-full text-sm font-bold bg-blue-600 text-white"></div>
+                    </div>
+
+                    <div id="pretest-container" class="space-y-5">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2.5" id="pre-qbox-0">
+                    <p class="font-bold text-slate-800 text-sm">1. What is the degree (d) of a standard simple Linear Regression equation y = w0 + w1*x?</p>
+                    <div class="space-y-1.5">
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-0" value="0" class="accent-blue-600">
+                                <span>d = 0</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-0" value="1" class="accent-blue-600">
+                                <span>d = 1</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-0" value="2" class="accent-blue-600">
+                                <span>d = 2</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-0" value="3" class="accent-blue-600">
+                                <span>d = 10</span>
+                            </label>
+                        
+                    </div>
+                    <div id="pre-exp-0" class="hidden text-xs p-2.5 rounded-lg mt-2"></div>
+                </div>
+            
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2.5" id="pre-qbox-1">
+                    <p class="font-bold text-slate-800 text-sm">2. When a regression model is too simple to capture the underlying curve in the data, what is this phenomenon called?</p>
+                    <div class="space-y-1.5">
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-1" value="0" class="accent-blue-600">
+                                <span>Overfitting</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-1" value="1" class="accent-blue-600">
+                                <span>Regularization</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-1" value="2" class="accent-blue-600">
+                                <span>Underfitting (High Bias)</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-1" value="3" class="accent-blue-600">
+                                <span>Data Leakage</span>
+                            </label>
+                        
+                    </div>
+                    <div id="pre-exp-1" class="hidden text-xs p-2.5 rounded-lg mt-2"></div>
+                </div>
+            
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2.5" id="pre-qbox-2">
+                    <p class="font-bold text-slate-800 text-sm">3. Which penalty term does Ridge Regression add to the Ordinary Least Squares cost function?</p>
+                    <div class="space-y-1.5">
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-2" value="0" class="accent-blue-600">
+                                <span>Sum of absolute weights (L1 penalty)</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-2" value="1" class="accent-blue-600">
+                                <span>Sum of squared weights (L2 penalty)</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-2" value="2" class="accent-blue-600">
+                                <span>Product of weights</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-2" value="3" class="accent-blue-600">
+                                <span>Logarithm of features</span>
+                            </label>
+                        
+                    </div>
+                    <div id="pre-exp-2" class="hidden text-xs p-2.5 rounded-lg mt-2"></div>
+                </div>
+            
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2.5" id="pre-qbox-3">
+                    <p class="font-bold text-slate-800 text-sm">4. In Polynomial Regression, how are non-linear curves fitted using linear algebra?</p>
+                    <div class="space-y-1.5">
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-3" value="0" class="accent-blue-600">
+                                <span>By adding powered features (x², x³, ..., x^d)</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-3" value="1" class="accent-blue-600">
+                                <span>By deleting outlier points</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-3" value="2" class="accent-blue-600">
+                                <span>By setting slope to zero</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-3" value="3" class="accent-blue-600">
+                                <span>By using decision trees</span>
+                            </label>
+                        
+                    </div>
+                    <div id="pre-exp-3" class="hidden text-xs p-2.5 rounded-lg mt-2"></div>
+                </div>
+            
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2.5" id="pre-qbox-4">
+                    <p class="font-bold text-slate-800 text-sm">5. Why do we split our dataset into Training Points and Testing Points?</p>
+                    <div class="space-y-1.5">
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-4" value="0" class="accent-blue-600">
+                                <span>To reduce file size</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-4" value="1" class="accent-blue-600">
+                                <span>To evaluate how well the model generalizes to unseen data</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-4" value="2" class="accent-blue-600">
+                                <span>To increase overfitting</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="pre-q-4" value="3" class="accent-blue-600">
+                                <span>To avoid calculating MSE</span>
+                            </label>
+                        
+                    </div>
+                    <div id="pre-exp-4" class="hidden text-xs p-2.5 rounded-lg mt-2"></div>
+                </div>
+            </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <button onclick="evaluateQuiz('pre')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow transition">
+                            Submit Pre-Test
+                        </button>
+                        <button onclick="resetQuiz('pre')" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm px-4 py-2.5 rounded-xl transition">
+                            Reset
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== PAGE 4: PROCEDURE (procedure.html) ==================== -->
+            <section id="page-procedure" class="page-section hidden space-y-6">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 sm:p-8">
+                    <div class="border-b border-slate-100 pb-4 mb-6">
+                        <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Step-by-Step Guide</span>
+                        <h2 class="text-2xl font-extrabold text-slate-900 mt-1">Operating Procedure</h2>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center flex-shrink-0">1</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Create or Upload a Dataset</h4>
+                                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                                    In the <strong>Simulation</strong> tab, click directly anywhere on the graph canvas to plot custom data points (automatically split into <span class="text-blue-600 font-semibold">Blue Training Points</span> and <span class="text-amber-600 font-semibold">Orange Testing Points</span>). Alternatively, click <strong>"Load Sample Curve"</strong> or <strong>"Upload CSV"</strong> to load external real-world data.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center flex-shrink-0">2</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Test Linear Regression (Underfitting)</h4>
+                                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                                    Select <strong>Linear Regression</strong>. Observe the straight blue line and check the <em>Train MSE</em>, <em>Test MSE</em>, and <em>Model Status Badge</em>. Click <strong>"+ Add to Observation Table"</strong> to record the baseline reading.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center flex-shrink-0">3</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Increase Polynomial Degree to Induce Overfitting</h4>
+                                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                                    Switch to <strong>Polynomial Regression</strong>. Move the <strong>Degree (d) slider</strong> first to d = 3 (Good Fit) and then up to d = 10–12. Notice how the curve oscillates sharply to hit training points while Test MSE increases rapidly. Record both readings.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center flex-shrink-0">4</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Apply Ridge Regression (λ) to Fix Overfitting</h4>
+                                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                                    Keeping Degree high (d = 10 or 12), select <strong>Ridge Regression</strong> (or <strong>Compare All 3</strong>) and gradually increase the <strong>Penalty (λ) slider</strong>. Watch the jagged curve smooth out and the Test MSE drop!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <button onclick="switchPage('simulation', 'simulation.html')" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow transition">
+                            Proceed to Simulation <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== PAGE 5: SIMULATION (simulation.html) ==================== -->
+            <section id="page-simulation" class="page-section space-y-6">
+
+                <!-- Top Dataset Toolbar -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-4 sm:p-5">
+                    <div class="flex flex-wrap items-center justify-between gap-3">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <h2 class="font-extrabold text-slate-900 text-base sm:text-lg">Interactive Regression &amp; Regularization Simulator</h2>
+                        </div>
+
+                        <!-- Dataset Action Buttons -->
+                        <div class="flex flex-wrap items-center gap-2">
+                            <button onclick="loadSampleDataset()" class="px-3 py-1.5 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 text-xs font-bold transition flex items-center gap-1.5">
+                                <i class="fa-solid fa-wave-square"></i> Load Sample Curve
+                            </button>
+                            <label class="px-3 py-1.5 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 text-xs font-bold transition flex items-center gap-1.5 cursor-pointer">
+                                <i class="fa-solid fa-file-csv"></i> Upload CSV
+                                <input type="file" id="csv-file-input" accept=".csv" class="hidden" onchange="handleCSVUpload(event)">
+                            </label>
+                            <button onclick="downloadSampleCSV()" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition flex items-center gap-1.5" title="Download a sample CSV file to test upload">
+                                <i class="fa-solid fa-download"></i> Sample CSV
+                            </button>
+                            <button onclick="clearCanvasPoints()" class="px-3 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-bold transition flex items-center gap-1.5">
+                                <i class="fa-solid fa-trash-can"></i> Clear Graph
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic CSV Column Selector Banner (Appears when CSV is uploaded) -->
+                    <div id="csv-column-bar" class="hidden mt-3 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 bg-indigo-50/60 p-3 rounded-xl border border-indigo-100">
+                        <div class="flex items-center gap-2 text-xs font-bold text-indigo-900">
+                            <i class="fa-solid fa-table text-indigo-600"></i>
+                            <span id="csv-filename-label">Loaded CSV</span>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-3 text-xs">
+                            <label class="flex items-center gap-1.5 font-semibold text-slate-700">
+                                X Column (Feature):
+                                <select id="csv-x-select" onchange="applyCSVColumns()" class="px-2 py-1 rounded border border-slate-300 bg-white font-bold text-slate-800"></select>
+                            </label>
+                            <label class="flex items-center gap-1.5 font-semibold text-slate-700">
+                                Y Column (Target):
+                                <select id="csv-y-select" onchange="applyCSVColumns()" class="px-2 py-1 rounded border border-slate-300 bg-white font-bold text-slate-800"></select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Simulator Grid: Controls (Left 4 cols) + Interactive Canvas (Right 8 cols) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+                    <!-- Left Control Panel (3 Core Controls) -->
+                    <div class="lg:col-span-4 bg-white rounded-2xl shadow-sm border border-slate-200/80 p-5 flex flex-col justify-between space-y-5">
+                        <div class="space-y-5">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">1. Select Regression Model</label>
+                                <div class="grid grid-cols-2 gap-2" id="model-buttons">
+                                    <button onclick="setModel('linear')" data-model="linear" class="model-btn px-3 py-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-bold transition text-left flex items-center gap-2">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span> Linear
+                                    </button>
+                                    <button onclick="setModel('polynomial')" data-model="polynomial" class="model-btn px-3 py-2.5 rounded-xl border-2 border-blue-600 bg-blue-50/70 text-blue-900 text-xs font-extrabold transition text-left flex items-center gap-2 shadow-sm">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span> Polynomial
+                                    </button>
+                                    <button onclick="setModel('ridge')" data-model="ridge" class="model-btn px-3 py-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-bold transition text-left flex items-center gap-2">
+                                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span> Ridge (L<sub>2</sub>)
+                                    </button>
+                                    <button onclick="setModel('all')" data-model="all" class="model-btn px-3 py-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-bold transition text-left flex items-center gap-2">
+                                        <i class="fa-solid fa-layer-group text-amber-500"></i> Compare All 3
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Control 2: Degree Slider -->
+                            <div id="degree-control-box" class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 transition">
+                                <div class="flex justify-between items-center mb-1.5">
+                                    <label class="text-xs font-bold text-slate-700">2. Polynomial Degree (d)</label>
+                                    <span id="degree-val-badge" class="px-2.5 py-0.5 rounded-md bg-purple-100 text-purple-800 font-mono text-xs font-bold">d = 5</span>
+                                </div>
+                                <input type="range" id="degree-slider" min="1" max="12" step="1" value="5" oninput="updateHyperparameters()" class="w-full accent-purple-600 cursor-pointer">
+                                <div class="flex justify-between text-[10px] text-slate-400 font-medium mt-1">
+                                    <span>1 (Linear)</span>
+                                    <span>3-4 (Ideal)</span>
+                                    <span>12 (High Overfit)</span>
+                                </div>
+                            </div>
+
+                            <!-- Control 3: Ridge Penalty (Lambda) Slider -->
+                            <div id="lambda-control-box" class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 transition opacity-40 pointer-events-none">
+                                <div class="flex justify-between items-center mb-1.5">
+                                    <label class="text-xs font-bold text-slate-700">3. Ridge Penalty (λ)</label>
+                                    <span id="lambda-val-badge" class="px-2.5 py-0.5 rounded-md bg-emerald-100 text-emerald-800 font-mono text-xs font-bold">λ = 0.50</span>
+                                </div>
+                                <input type="range" id="lambda-slider" min="0" max="5" step="0.05" value="0.5" oninput="updateHyperparameters()" class="w-full accent-emerald-600 cursor-pointer">
+                                <div class="flex justify-between text-[10px] text-slate-400 font-medium mt-1">
+                                    <span>0 (No Penalty)</span>
+                                    <span>1.5 (Smooth)</span>
+                                    <span>5.0 (Strong Shrink)</span>
+                                </div>
+                            </div>
+
+                            <!-- Point Click Mode Selector -->
+                            <div class="pt-1">
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Click on Graph Adds:</label>
+                                <div class="flex gap-2">
+                                    <button onclick="setPointMode('auto')" id="pt-mode-auto" class="flex-1 py-1.5 px-2 rounded-lg text-xs font-bold bg-slate-800 text-white">Auto (Train/Test)</button>
+                                    <button onclick="setPointMode('train')" id="pt-mode-train" class="flex-1 py-1.5 px-2 rounded-lg text-xs font-semibold bg-slate-100 text-blue-700">Train Dot</button>
+                                    <button onclick="setPointMode('test')" id="pt-mode-test" class="flex-1 py-1.5 px-2 rounded-lg text-xs font-semibold bg-slate-100 text-amber-700">Test Dot</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Record Reading Button -->
+                        <button onclick="recordObservation()" class="w-full py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm shadow-md transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-plus-circle text-amber-400"></i>
+                            <span>Add to Observation Table</span>
+                        </button>
+                    </div>
+
+                    <!-- Right Interactive Plot + Live Metrics (8 cols) -->
+                    <div class="lg:col-span-8 flex flex-col gap-4">
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-4 flex-1 flex flex-col">
+                            <!-- Legend Header -->
+                            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-2 border-b border-slate-100 text-xs">
+                                <div class="flex flex-wrap items-center gap-4">
+                                    <span class="flex items-center gap-1.5 font-semibold text-slate-600">
+                                        <span class="w-3 h-3 rounded-full bg-blue-600 inline-block"></span> Train Points
+                                    </span>
+                                    <span class="flex items-center gap-1.5 font-semibold text-slate-600">
+                                        <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span> Test Points
+                                    </span>
+                                    <span class="flex items-center gap-1.5 font-semibold text-blue-700">
+                                        <span class="w-4 h-0.5 bg-blue-600 inline-block"></span> Linear
+                                    </span>
+                                    <span class="flex items-center gap-1.5 font-semibold text-purple-700">
+                                        <span class="w-4 h-0.5 bg-purple-600 inline-block"></span> Polynomial
+                                    </span>
+                                    <span class="flex items-center gap-1.5 font-semibold text-emerald-700">
+                                        <span class="w-4 h-0.5 bg-emerald-600 inline-block"></span> Ridge (L<sub>2</sub>)
+                                    </span>
+                                </div>
+                                <span class="text-[11px] text-slate-400 italic">Click anywhere on canvas to add data points</span>
+                            </div>
+
+                            <!-- Responsive Canvas Container -->
+                            <div class="relative w-full h-72 sm:h-80 bg-slate-50 rounded-xl border border-slate-200 overflow-hidden" id="canvas-wrapper">
+                                <canvas id="regression-canvas" width="597" height="318"></canvas>
+                            </div>
+                        </div>
+
+                        <!-- Live Score Cards (3 Metrics + Diagnosis Badge) -->
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-sm">
+                                <span class="text-[11px] font-bold uppercase text-slate-400 block">Train Error (MSE)</span>
+                                <span id="metric-train-mse" class="text-lg sm:text-xl font-extrabold text-slate-800 font-mono mt-0.5 block">0.135</span>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-sm">
+                                <span class="text-[11px] font-bold uppercase text-slate-400 block">Test Error (MSE)</span>
+                                <span id="metric-test-mse" class="text-lg sm:text-xl font-extrabold text-slate-800 font-mono mt-0.5 block">0.758</span>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-sm">
+                                <span class="text-[11px] font-bold uppercase text-slate-400 block">R<sup>2</sup> Accuracy Score</span>
+                                <span id="metric-r2" class="text-lg sm:text-xl font-extrabold text-blue-600 font-mono mt-0.5 block">0.940</span>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                                <span class="text-[11px] font-bold uppercase text-slate-400 block">Model Diagnosis</span>
+                                <span id="metric-status" class="inline-block mt-1 px-2.5 py-1 rounded-lg text-xs font-extrabold text-center bg-emerald-100 text-emerald-800">Good Fit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Observation Table Section -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-5">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-base flex items-center gap-2">
+                                <i class="fa-solid fa-table-list text-blue-600"></i>
+                                <span>Experimental Observation Table</span>
+                            </h3>
+                            <p class="text-xs text-slate-500">Compare recorded runs across Linear, Polynomial, and Ridge models.</p>
+                        </div>
+                        <button onclick="clearObservations()" class="text-xs text-slate-500 hover:text-rose-600 font-semibold px-2.5 py-1 rounded hover:bg-rose-50 transition">
+                            Clear Table
+                        </button>
+                    </div>
+                    <div class="overflow-x-auto border border-slate-200 rounded-xl">
+                        <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                            <thead class="bg-slate-50 text-slate-600 border-b border-slate-200">
+                                <tr>
+                                    <th class="py-2.5 px-3">#</th>
+                                    <th class="py-2.5 px-3">Model</th>
+                                    <th class="py-2.5 px-3">Degree (d)</th>
+                                    <th class="py-2.5 px-3">Penalty (λ)</th>
+                                    <th class="py-2.5 px-3">Train MSE</th>
+                                    <th class="py-2.5 px-3">Test MSE</th>
+                                    <th class="py-2.5 px-3">R<sup>2</sup> Score</th>
+                                    <th class="py-2.5 px-3">Behavior Diagnosis</th>
+                                </tr>
+                            </thead>
+                            <tbody id="observation-tbody" class="divide-y divide-slate-100">
+                                <tr id="empty-obs-row">
+                                    <td colspan="8" class="py-6 text-center text-slate-400 italic text-xs">
+                                        No readings recorded yet. Click "+ Add to Observation Table" to log your experiments.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== PAGE 6: POST-TEST (posttest.html) ==================== -->
+            <section id="page-posttest" class="page-section hidden space-y-6">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 sm:p-8">
+                    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4 mb-6">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Evaluation After Simulation</span>
+                            <h2 class="text-2xl font-extrabold text-slate-900 mt-1">Post-Test Assessment</h2>
+                        </div>
+                        <div id="posttest-score-badge" class="hidden px-4 py-1.5 rounded-full text-sm font-bold bg-emerald-600 text-white"></div>
+                    </div>
+
+                    <div id="posttest-container" class="space-y-5">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2.5" id="post-qbox-0">
+                    <p class="font-bold text-slate-800 text-sm">1. In the simulator, when you increased Polynomial Degree to d = 12 without regularization, what happened to Train MSE vs Test MSE?</p>
+                    <div class="space-y-1.5">
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-0" value="0" class="accent-blue-600">
+                                <span>Both Train MSE and Test MSE became zero</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-0" value="1" class="accent-blue-600">
+                                <span>Train MSE became very small, but Test MSE increased sharply (Overfitting)</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-0" value="2" class="accent-blue-600">
+                                <span>Train MSE became huge and Test MSE became zero</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-0" value="3" class="accent-blue-600">
+                                <span>Nothing changed</span>
+                            </label>
+                        
+                    </div>
+                    <div id="post-exp-0" class="hidden text-xs p-2.5 rounded-lg mt-2"></div>
+                </div>
+            
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2.5" id="post-qbox-1">
+                    <p class="font-bold text-slate-800 text-sm">2. Keeping degree d = 12 fixed, what happened when you switched to Ridge Regression and increased Lambda (λ &gt; 0.5)?</p>
+                    <div class="space-y-1.5">
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-1" value="0" class="accent-blue-600">
+                                <span>The curve became smoother and Test MSE decreased</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-1" value="1" class="accent-blue-600">
+                                <span>The curve became even more zig-zag</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-1" value="2" class="accent-blue-600">
+                                <span>All data points disappeared</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-1" value="3" class="accent-blue-600">
+                                <span>Degree automatically became 1</span>
+                            </label>
+                        
+                    </div>
+                    <div id="post-exp-1" class="hidden text-xs p-2.5 rounded-lg mt-2"></div>
+                </div>
+            
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2.5" id="post-qbox-2">
+                    <p class="font-bold text-slate-800 text-sm">3. If the Ridge penalty hyperparameter λ is set to 0, Ridge Regression behaves identically to:</p>
+                    <div class="space-y-1.5">
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-2" value="0" class="accent-blue-600">
+                                <span>K-Means Clustering</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-2" value="1" class="accent-blue-600">
+                                <span>Standard unregularized Polynomial Regression</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-2" value="2" class="accent-blue-600">
+                                <span>Logistic Regression</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-2" value="3" class="accent-blue-600">
+                                <span>A constant horizontal line</span>
+                            </label>
+                        
+                    </div>
+                    <div id="post-exp-2" class="hidden text-xs p-2.5 rounded-lg mt-2"></div>
+                </div>
+            
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2.5" id="post-qbox-3">
+                    <p class="font-bold text-slate-800 text-sm">4. Which combination typically produces the 'Good Fit' diagnosis on a smooth curved dataset?</p>
+                    <div class="space-y-1.5">
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-3" value="0" class="accent-blue-600">
+                                <span>Linear Regression (d = 1)</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-3" value="1" class="accent-blue-600">
+                                <span>Polynomial Regression with d = 12, λ = 0</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-3" value="2" class="accent-blue-600">
+                                <span>Polynomial (d = 3 or 4) OR High-degree Ridge with moderate λ</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-3" value="3" class="accent-blue-600">
+                                <span>Setting all weights to infinity</span>
+                            </label>
+                        
+                    </div>
+                    <div id="post-exp-3" class="hidden text-xs p-2.5 rounded-lg mt-2"></div>
+                </div>
+            
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2.5" id="post-qbox-4">
+                    <p class="font-bold text-slate-800 text-sm">5. What happens to the regression curve if the Ridge penalty λ is made extremely large (e.g., λ → ∞)?</p>
+                    <div class="space-y-1.5">
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-4" value="0" class="accent-blue-600">
+                                <span>It overfits every point</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-4" value="1" class="accent-blue-600">
+                                <span>The slope coefficients shrink toward zero, flattening the curve (Underfitting)</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-4" value="2" class="accent-blue-600">
+                                <span>Training error becomes negative</span>
+                            </label>
+                        
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="post-q-4" value="3" class="accent-blue-600">
+                                <span>R² score becomes 1.0</span>
+                            </label>
+                        
+                    </div>
+                    <div id="post-exp-4" class="hidden text-xs p-2.5 rounded-lg mt-2"></div>
+                </div>
+            </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <button onclick="evaluateQuiz('post')" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-5 py-2.5 rounded-xl shadow transition">
+                            Submit Post-Test
+                        </button>
+                        <button onclick="resetQuiz('post')" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm px-4 py-2.5 rounded-xl transition">
+                            Reset
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== PAGE 7: TEAM MEMBERS (team.html) ==================== -->
+            <section id="page-team" class="page-section space-y-6 hidden">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-6 sm:p-8">
+                    <div class="border-b border-slate-100 pb-4 mb-6 flex flex-wrap items-center justify-between gap-2">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Virtual Lab Development Team</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Project Contributors — Class D12C</h2>
+                        </div>
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-200">
+                            Batch: D12C • Machine Learning Lab
+                        </span>
+                    </div>
+
+                    <!-- 4 Team Cards Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <!-- Member 1 -->
+                        <div class="p-6 rounded-2xl bg-gradient-to-b from-slate-50 to-white border border-slate-200 shadow-sm hover:shadow-md transition text-center group">
+                            <div class="w-16 h-16 rounded-2xl bg-blue-600 text-white font-extrabold text-xl flex items-center justify-center mx-auto mb-4 shadow-md group-hover:scale-105 transition">
+                                AP
+                            </div>
+                            <h3 class="font-extrabold text-slate-900 text-base">AYUSH PARAB</h3>
+                            <p class="text-xs font-bold text-blue-600 mt-1 bg-blue-50 inline-block px-3 py-1 rounded-full border border-blue-200">
+                                Roll No: D12C / 38
+                            </p>
+                            <p class="text-xs text-slate-500 mt-3">Simulation Engine &amp; Regression Models</p>
+                        </div>
+
+                        <!-- Member 2 -->
+                        <div class="p-6 rounded-2xl bg-gradient-to-b from-slate-50 to-white border border-slate-200 shadow-sm hover:shadow-md transition text-center group">
+                            <div class="w-16 h-16 rounded-2xl bg-indigo-600 text-white font-extrabold text-xl flex items-center justify-center mx-auto mb-4 shadow-md group-hover:scale-105 transition">
+                                PK
+                            </div>
+                            <h3 class="font-extrabold text-slate-900 text-base">PRANAV KULE</h3>
+                            <p class="text-xs font-bold text-indigo-600 mt-1 bg-indigo-50 inline-block px-3 py-1 rounded-full border border-indigo-200">
+                                Roll No: D12C / 22
+                            </p>
+                            <p class="text-xs text-slate-500 mt-3">UI/UX Architecture &amp; Data Visualization</p>
+                        </div>
+
+                        <!-- Member 3 -->
+                        <div class="p-6 rounded-2xl bg-gradient-to-b from-slate-50 to-white border border-slate-200 shadow-sm hover:shadow-md transition text-center group">
+                            <div class="w-16 h-16 rounded-2xl bg-emerald-600 text-white font-extrabold text-xl flex items-center justify-center mx-auto mb-4 shadow-md group-hover:scale-105 transition">
+                                AP
+                            </div>
+                            <h3 class="font-extrabold text-slate-900 text-base">AYUSH PAMNANI</h3>
+                            <p class="text-xs font-bold text-emerald-600 mt-1 bg-emerald-50 inline-block px-3 py-1 rounded-full border border-emerald-200">
+                                Roll No: D12C / 34
+                            </p>
+                            <p class="text-xs text-slate-500 mt-3">Theory Documentation &amp; Mathematical Formulation</p>
+                        </div>
+
+                        <!-- Member 4 -->
+                        <div class="p-6 rounded-2xl bg-gradient-to-b from-slate-50 to-white border border-slate-200 shadow-sm hover:shadow-md transition text-center group">
+                            <div class="w-16 h-16 rounded-2xl bg-amber-500 text-slate-950 font-extrabold text-xl flex items-center justify-center mx-auto mb-4 shadow-md group-hover:scale-105 transition">
+                                AR
+                            </div>
+                            <h3 class="font-extrabold text-slate-900 text-base">ARYAN RAMCHANDANI</h3>
+                            <p class="text-xs font-bold text-amber-700 mt-1 bg-amber-50 inline-block px-3 py-1 rounded-full border border-amber-200">
+                                Roll No: D12C / 47
+                            </p>
+                            <p class="text-xs text-slate-500 mt-3">Pre/Post-Test Assessment &amp; CSV Pipeline</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-slate-900 text-white px-4 py-3 rounded-xl shadow-xl border border-slate-700 text-xs sm:text-sm font-medium flex items-center gap-2.5 transition-opacity duration-300 z-50 opacity-0 pointer-events-none">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span id="toast-msg">Sample noisy curve loaded (Train + Test split)</span>
+    </div>
+
+    <!-- ==================== APPLICATION LOGIC ==================== -->
+    <script>
+        /* -----------------------------------------------------------
+           1. PAGE NAVIGATION & MOBILE DRAWER
+        ----------------------------------------------------------- */
+        let currentPage = 'procedure'; window.addEventListener('DOMContentLoaded', () => switchPage('procedure', 'procedure.html'));
+
+        function switchPage(pageId, fileName) {
+            currentPage = pageId;
+            document.querySelectorAll('.page-section').forEach(sec => sec.classList.add('hidden'));
+            const target = document.getElementById('page-' + pageId);
+            if (target) target.classList.remove('hidden');
+
+            // Update active class on sidebar
+            document.querySelectorAll('#nav-links .sidebar-link').forEach(btn => {
+                if (btn.getAttribute('data-page') === pageId) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // Update filename indicator
+            const badge = document.getElementById('current-filename-badge');
+            if (badge && fileName) badge.textContent = fileName;
+
+            // If entering simulation, resize canvas and draw immediately
+            if (pageId === 'simulation') {
+                setTimeout(() => {
+                    resizeCanvas();
+                    runSimulation();
+                }, 40);
+            }
+        }
+
+        function toggleMobileMenu() {
+            const drawer = document.getElementById('mobile-drawer');
+            drawer.classList.toggle('hidden');
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-msg').textContent = msg;
+            toast.classList.remove('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'pointer-events-none');
+            }, 3000);
+        }
+
+        /* -----------------------------------------------------------
+           2. PRE-TEST & POST-TEST QUIZ ENGINE
+        ----------------------------------------------------------- */
+        const preTestQuestions = [
+            {
+                q: "1. What is the degree (d) of a standard simple Linear Regression equation y = w0 + w1*x?",
+                options: ["d = 0", "d = 1", "d = 2", "d = 10"],
+                answer: 1,
+                explanation: "Simple Linear Regression has highest power of x equal to 1 (straight line)."
+            },
+            {
+                q: "2. When a regression model is too simple to capture the underlying curve in the data, what is this phenomenon called?",
+                options: ["Overfitting", "Regularization", "Underfitting (High Bias)", "Data Leakage"],
+                answer: 2,
+                explanation: "Underfitting occurs when a model (like a straight line on a sine wave) has high bias and fails on both training and test data."
+            },
+            {
+                q: "3. Which penalty term does Ridge Regression add to the Ordinary Least Squares cost function?",
+                options: ["Sum of absolute weights (L1 penalty)", "Sum of squared weights (L2 penalty)", "Product of weights", "Logarithm of features"],
+                answer: 1,
+                explanation: "Ridge Regression uses L2 regularization: λ * Σ(w_j²)."
+            },
+            {
+                q: "4. In Polynomial Regression, how are non-linear curves fitted using linear algebra?",
+                options: ["By adding powered features (x², x³, ..., x^d)", "By deleting outlier points", "By setting slope to zero", "By using decision trees"],
+                answer: 0,
+                explanation: "Polynomial Regression creates polynomial features (x², x³, etc.) and fits weights linearly on them."
+            },
+            {
+                q: "5. Why do we split our dataset into Training Points and Testing Points?",
+                options: ["To reduce file size", "To evaluate how well the model generalizes to unseen data", "To increase overfitting", "To avoid calculating MSE"],
+                answer: 1,
+                explanation: "Test data checks whether the model learned the true pattern or merely memorized the training points."
+            }
+        ];
+
+        const postTestQuestions = [
+            {
+                q: "1. In the simulator, when you increased Polynomial Degree to d = 12 without regularization, what happened to Train MSE vs Test MSE?",
+                options: ["Both Train MSE and Test MSE became zero", "Train MSE became very small, but Test MSE increased sharply (Overfitting)", "Train MSE became huge and Test MSE became zero", "Nothing changed"],
+                answer: 1,
+                explanation: "High-degree polynomials wiggle through training points (low Train MSE) but miss unseen test points badly (high Test MSE)."
+            },
+            {
+                q: "2. Keeping degree d = 12 fixed, what happened when you switched to Ridge Regression and increased Lambda (λ > 0.5)?",
+                options: ["The curve became smoother and Test MSE decreased", "The curve became even more zig-zag", "All data points disappeared", "Degree automatically became 1"],
+                answer: 0,
+                explanation: "Ridge penalizes large polynomial weights, dampening wild oscillations and improving test generalization."
+            },
+            {
+                q: "3. If the Ridge penalty hyperparameter λ is set to 0, Ridge Regression behaves identically to:",
+                options: ["K-Means Clustering", "Standard unregularized Polynomial Regression", "Logistic Regression", "A constant horizontal line"],
+                answer: 1,
+                explanation: "When λ = 0, the L2 penalty term vanishes, leaving the standard least squares polynomial objective."
+            },
+            {
+                q: "4. Which combination typically produces the 'Good Fit' diagnosis on a smooth curved dataset?",
+                options: ["Linear Regression (d = 1)", "Polynomial Regression with d = 12, λ = 0", "Polynomial (d = 3 or 4) OR High-degree Ridge with moderate λ", "Setting all weights to infinity"],
+                answer: 2,
+                explanation: "Either choosing an appropriate polynomial degree (3-4) or regularizing a high-degree polynomial with Ridge achieves low Test MSE."
+            },
+            {
+                q: "5. What happens to the regression curve if the Ridge penalty λ is made extremely large (e.g., λ → ∞)?",
+                options: ["It overfits every point", "The slope coefficients shrink toward zero, flattening the curve (Underfitting)", "Training error becomes negative", "R² score becomes 1.0"],
+                answer: 1,
+                explanation: "Excessive regularization forces weights close to zero, leaving only the intercept (mean of y)."
+            }
+        ];
+
+        function renderQuiz(type) {
+            const questions = type === 'pre' ? preTestQuestions : postTestQuestions;
+            const container = document.getElementById(type + 'test-container');
+            container.innerHTML = questions.map((item, idx) => `
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2.5" id="${type}-qbox-${idx}">
+                    <p class="font-bold text-slate-800 text-sm">${item.q}</p>
+                    <div class="space-y-1.5">
+                        ${item.options.map((opt, oIdx) => `
+                            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-white cursor-pointer text-xs sm:text-sm text-slate-700 border border-transparent hover:border-slate-200 transition">
+                                <input type="radio" name="${type}-q-${idx}" value="${oIdx}" class="accent-blue-600">
+                                <span>${opt}</span>
+                            </label>
+                        `).join('')}
+                    </div>
+                    <div id="${type}-exp-${idx}" class="hidden text-xs p-2.5 rounded-lg mt-2"></div>
+                </div>
+            `).join('');
+        }
+
+        function evaluateQuiz(type) {
+            const questions = type === 'pre' ? preTestQuestions : postTestQuestions;
+            let score = 0;
+            questions.forEach((item, idx) => {
+                const selected = document.querySelector(`input[name="${type}-q-${idx}"]:checked`);
+                const expBox = document.getElementById(`${type}-exp-${idx}`);
+                expBox.classList.remove('hidden', 'bg-emerald-100', 'text-emerald-800', 'bg-rose-100', 'text-rose-800');
+
+                if (selected && parseInt(selected.value) === item.answer) {
+                    score++;
+                    expBox.classList.add('bg-emerald-100', 'text-emerald-800');
+                    expBox.innerHTML = `<i class="fa-solid fa-check-circle mr-1"></i> <strong>Correct!</strong> ${item.explanation}`;
+                } else {
+                    expBox.classList.add('bg-rose-100', 'text-rose-800');
+                    expBox.innerHTML = `<i class="fa-solid fa-circle-xmark mr-1"></i> <strong>Incorrect.</strong> Correct Answer: <em>${item.options[item.answer]}</em>. ${item.explanation}`;
+                }
+            });
+
+            const badge = document.getElementById(`${type}test-score-badge`);
+            badge.classList.remove('hidden');
+            badge.textContent = `Score: ${score} / ${questions.length}`;
+            showToast(`Quiz Submitted! You scored ${score}/${questions.length}`);
+        }
+
+        function resetQuiz(type) {
+            renderQuiz(type);
+            document.getElementById(`${type}test-score-badge`).classList.add('hidden');
+        }
+
+        /* -----------------------------------------------------------
+           3. SIMULATION ENGINE: LINEAR, POLYNOMIAL & RIDGE REGRESSION
+        ----------------------------------------------------------- */
+        let dataPoints = []; // Each point: { x: [0..1], y: [0..1], isTest: boolean, rawX, rawY }
+        let selectedModel = 'polynomial'; // 'linear' | 'polynomial' | 'ridge' | 'all'
+        let polyDegree = 5;
+        let ridgeLambda = 0.50;
+        let pointAddMode = 'auto'; // 'auto' | 'train' | 'test'
+        let parsedCSVData = null; // Stores uploaded CSV rows & headers
+        let observationCount = 0;
+
+        const canvas = document.getElementById('regression-canvas');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            const wrapper = document.getElementById('canvas-wrapper');
+            if (!wrapper) return;
+            canvas.width = wrapper.clientWidth;
+            canvas.height = wrapper.clientHeight;
+        }
+
+        window.addEventListener('resize', () => {
+            if (currentPage === 'simulation') {
+                resizeCanvas();
+                runSimulation();
+            }
+        });
+
+        // Click on canvas to add custom data point
+        canvas.addEventListener('pointerdown', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const px = e.clientX - rect.left;
+            const py = e.clientY - rect.top;
+
+            const pad = 36;
+            const plotW = canvas.width - pad * 2;
+            const plotH = canvas.height - pad * 2;
+
+            if (px < pad || px > canvas.width - pad || py < pad || py > canvas.height - pad) return;
+
+            const normX = (px - pad) / plotW;
+            const normY = 1 - (py - pad) / plotH;
+
+            let isTest = false;
+            if (pointAddMode === 'test') isTest = true;
+            else if (pointAddMode === 'auto') isTest = (dataPoints.length % 3 === 2);
+
+            dataPoints.push({ x: normX, y: normY, isTest });
+            runSimulation();
+        });
+
+        function setPointMode(mode) {
+            pointAddMode = mode;
+            ['auto', 'train', 'test'].forEach(m => {
+                const btn = document.getElementById('pt-mode-' + m);
+                if (m === mode) {
+                    btn.className = 'flex-1 py-1.5 px-2 rounded-lg text-xs font-bold bg-slate-800 text-white';
+                } else {
+                    btn.className = 'flex-1 py-1.5 px-2 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600';
+                }
+            });
+        }
+
+        // Generate synthetic curved dataset (Sine wave + slight noise) so Overfitting & Ridge are clearly visible
+        function loadSampleDataset() {
+            dataPoints = [];
+            document.getElementById('csv-column-bar').classList.add('hidden');
+            const total = 22;
+            // Deterministic pseudo-noise so curve demonstration is super clear & reproducible
+            const noisePattern = [0.04, -0.05, 0.06, -0.03, 0.08, -0.07, 0.03, -0.06, 0.05, 0.07, -0.08, 0.04];
+            for (let i = 0; i < total; i++) {
+                const x = 0.05 + (0.90 * i) / (total - 1);
+                const cleanY = 0.5 + 0.32 * Math.sin(x * Math.PI * 1.85 - 0.3);
+                const noise = noisePattern[i % noisePattern.length];
+                const y = Math.max(0.08, Math.min(0.92, cleanY + noise));
+                const isTest = (i % 3 === 1); // ~33% test points
+                dataPoints.push({ x, y, isTest });
+            }
+            runSimulation();
+            showToast("Sample noisy curve loaded (Train + Test split)");
+        }
+
+        function clearCanvasPoints() {
+            dataPoints = [];
+            document.getElementById('csv-column-bar').classList.add('hidden');
+            runSimulation();
+            showToast("Graph cleared! Click on the canvas to plot new points.");
+        }
+
+        function setModel(modelName) {
+            selectedModel = modelName;
+            document.querySelectorAll('#model-buttons .model-btn').forEach(btn => {
+                if (btn.getAttribute('data-model') === modelName) {
+                    btn.className = 'model-btn px-3 py-2.5 rounded-xl border-2 border-blue-600 bg-blue-50/70 text-blue-900 text-xs font-extrabold transition text-left flex items-center gap-2 shadow-sm';
+                } else {
+                    btn.className = 'model-btn px-3 py-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 text-xs font-bold transition text-left flex items-center gap-2';
+                }
+            });
+
+            // Enable/dim sliders depending on active model
+            const degBox = document.getElementById('degree-control-box');
+            const lamBox = document.getElementById('lambda-control-box');
+
+            if (modelName === 'linear') {
+                degBox.classList.add('opacity-40', 'pointer-events-none');
+                lamBox.classList.add('opacity-40', 'pointer-events-none');
+            } else if (modelName === 'polynomial') {
+                degBox.classList.remove('opacity-40', 'pointer-events-none');
+                lamBox.classList.add('opacity-40', 'pointer-events-none');
+            } else {
+                degBox.classList.remove('opacity-40', 'pointer-events-none');
+                lamBox.classList.remove('opacity-40', 'pointer-events-none');
+            }
+
+            runSimulation();
+        }
+
+        function updateHyperparameters() {
+            polyDegree = parseInt(document.getElementById('degree-slider').value);
+            ridgeLambda = parseFloat(document.getElementById('lambda-slider').value);
+            document.getElementById('degree-val-badge').textContent = `d = ${polyDegree}`;
+            document.getElementById('lambda-val-badge').textContent = `λ = ${ridgeLambda.toFixed(2)}`;
+            runSimulation();
+        }
+
+        /* -----------------------------------------------------------
+           4. MATHEMATICAL SOLVER: POLYNOMIAL & RIDGE NORMAL EQUATION
+              (X^T X + λI) w = X^T y  with scaled x in [-1, 1]
+        ----------------------------------------------------------- */
+        function fitPolynomialRidge(trainPts, degree, lambdaVal) {
+            const n = trainPts.length;
+            const m = degree + 1;
+            if (n === 0) return null;
+
+            // Scale x to [-1, 1] for numerical stability up to degree 12
+            const X = trainPts.map(p => {
+                const sx = (p.x - 0.5) * 2;
+                const row = new Array(m);
+                let val = 1;
+                for (let j = 0; j < m; j++) {
+                    row[j] = val;
+                    val *= sx;
+                }
+                return row;
+            });
+            const Y = trainPts.map(p => p.y);
+
+            // Build A = X^T * X + regMatrix and B = X^T * Y
+            const A = Array.from({ length: m }, () => new Array(m).fill(0));
+            const B = new Array(m).fill(0);
+
+            for (let i = 0; i < n; i++) {
+                for (let j = 0; j < m; j++) {
+                    B[j] += X[i][j] * Y[i];
+                    for (let k = 0; k < m; k++) {
+                        A[j][k] += X[i][j] * X[i][k];
+                    }
+                }
+            }
+
+            // Apply L2 Regularization penalty to slopes (j >= 1), plus tiny 1e-9 ridge for invertibility when lambda=0
+            const effectiveLambda = lambdaVal * 0.025;
+            for (let j = 0; j < m; j++) {
+                if (j === 0) {
+                    A[j][j] += 1e-9;
+                } else {
+                    A[j][j] += effectiveLambda + 1e-8;
+                }
+            }
+
+            const weights = gaussianElimination(A, B);
+            return function predict(xVal) {
+                const sx = (xVal - 0.5) * 2;
+                let sum = 0;
+                let power = 1;
+                for (let j = 0; j < weights.length; j++) {
+                    sum += weights[j] * power;
+                    power *= sx;
+                }
+                return sum;
+            };
+        }
+
+        function gaussianElimination(A, B) {
+            const n = B.length;
+            const M = A.map((row, i) => [...row, B[i]]);
+
+            for (let i = 0; i < n; i++) {
+                let maxRow = i;
+                for (let k = i + 1; k < n; k++) {
+                    if (Math.abs(M[k][i]) > Math.abs(M[maxRow][i])) maxRow = k;
+                }
+                [M[i], M[maxRow]] = [M[maxRow], M[i]];
+
+                const pivot = M[i][i];
+                if (Math.abs(pivot) < 1e-12) continue;
+
+                for (let k = i + 1; k < n; k++) {
+                    const factor = M[k][i] / pivot;
+                    for (let j = i; j <= n; j++) {
+                        M[k][j] -= factor * M[i][j];
+                    }
+                }
+            }
+
+            const x = new Array(n).fill(0);
+            for (let i = n - 1; i >= 0; i--) {
+                let sum = M[i][n];
+                for (let j = i + 1; j < n; j++) {
+                    sum -= M[i][j] * x[j];
+                }
+                x[i] = Math.abs(M[i][i]) > 1e-12 ? sum / M[i][i] : 0;
+            }
+            return x;
+        }
+
+        function computeMetrics(pts, predictFn) {
+            if (!pts.length || !predictFn) return { mse: 0, r2: 0 };
+            let sse = 0;
+            let meanY = 0;
+            pts.forEach(p => meanY += p.y);
+            meanY /= pts.length;
+
+            let sst = 0;
+            pts.forEach(p => {
+                const pred = predictFn(p.x);
+                sse += Math.pow(p.y - pred, 2);
+                sst += Math.pow(p.y - meanY, 2);
+            });
+
+            const mse = (sse / pts.length) * 100; // Scaled x100 for readable lab numbers
+            const r2 = sst > 1e-9 ? Math.max(-1, 1 - (sse / sst)) : 0;
+            return { mse, r2 };
+        }
+
+        /* -----------------------------------------------------------
+           5. RENDERING GRAPH & LIVE SCORE CARDS
+        ----------------------------------------------------------- */
+        function runSimulation() {
+            if (!canvas.width) resizeCanvas();
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const pad = 36;
+            const plotW = canvas.width - pad * 2;
+            const plotH = canvas.height - pad * 2;
+
+            // Draw subtle coordinate grid
+            ctx.strokeStyle = '#e2e8f0';
+            ctx.lineWidth = 1;
+            for (let i = 0; i <= 5; i++) {
+                const gx = pad + (plotW * i) / 5;
+                const gy = pad + (plotH * i) / 5;
+                ctx.beginPath(); ctx.moveTo(gx, pad); ctx.lineTo(gx, pad + plotH); ctx.stroke();
+                ctx.beginPath(); ctx.moveTo(pad, gy); ctx.lineTo(pad + plotW, gy); ctx.stroke();
+            }
+
+            // Draw X and Y axes
+            ctx.strokeStyle = '#94a3b8';
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.moveTo(pad, pad);
+            ctx.lineTo(pad, pad + plotH);
+            ctx.lineTo(pad + plotW, pad + plotH);
+            ctx.stroke();
+
+            const trainPts = dataPoints.filter(p => !p.isTest);
+            const testPts = dataPoints.filter(p => p.isTest);
+
+            // Fit the 3 models if we have at least 2 training points
+            let linearFn = null, polyFn = null, ridgeFn = null;
+            if (trainPts.length >= 2) {
+                linearFn = fitPolynomialRidge(trainPts, 1, 0);
+                polyFn = fitPolynomialRidge(trainPts, polyDegree, 0);
+                ridgeFn = fitPolynomialRidge(trainPts, polyDegree, ridgeLambda);
+            }
+
+            // Helper to draw a regression curve
+            function drawCurve(fn, color, lineWidth, dashed = false) {
+                if (!fn) return;
+                ctx.save();
+                ctx.beginPath();
+                ctx.rect(pad, pad, plotW, plotH);
+                ctx.clip();
+
+                ctx.strokeStyle = color;
+                ctx.lineWidth = lineWidth;
+                if (dashed) ctx.setLineDash([6, 4]);
+
+                ctx.beginPath();
+                const steps = 160;
+                for (let i = 0; i <= steps; i++) {
+                    const xVal = i / steps;
+                    const yVal = fn(xVal);
+                    const cx = pad + xVal * plotW;
+                    const cy = pad + (1 - yVal) * plotH;
+                    if (i === 0) ctx.moveTo(cx, cy);
+                    else ctx.lineTo(cx, cy);
+                }
+                ctx.stroke();
+                ctx.restore();
+            }
+
+            // Plot selected model curve(s)
+            if (selectedModel === 'linear') {
+                drawCurve(linearFn, '#2563eb', 3);
+            } else if (selectedModel === 'polynomial') {
+                drawCurve(polyFn, '#9333ea', 3);
+            } else if (selectedModel === 'ridge') {
+                drawCurve(polyFn, '#d8b4fe', 1.5, true); // faint dashed unregularized polynomial for reference
+                drawCurve(ridgeFn, '#059669', 3.2);
+            } else if (selectedModel === 'all') {
+                drawCurve(linearFn, '#2563eb', 2.2);
+                drawCurve(polyFn, '#9333ea', 2.2, true);
+                drawCurve(ridgeFn, '#059669', 3);
+            }
+
+            // Draw Data Points (Train = Blue circle, Test = Orange circle)
+            dataPoints.forEach(p => {
+                const cx = pad + p.x * plotW;
+                const cy = pad + (1 - p.y) * plotH;
+                ctx.beginPath();
+                ctx.arc(cx, cy, p.isTest ? 5.5 : 5, 0, Math.PI * 2);
+                ctx.fillStyle = p.isTest ? '#f59e0b' : '#2563eb';
+                ctx.fill();
+                ctx.lineWidth = 1.5;
+                ctx.strokeStyle = '#ffffff';
+                ctx.stroke();
+            });
+
+            // Determine active prediction function for live metrics display
+            let activeFn = polyFn;
+            if (selectedModel === 'linear') activeFn = linearFn;
+            else if (selectedModel === 'ridge' || selectedModel === 'all') activeFn = ridgeFn;
+
+            updateMetricsUI(trainPts, testPts, activeFn);
+        }
+
+        function updateMetricsUI(trainPts, testPts, activeFn) {
+            const trainEl = document.getElementById('metric-train-mse');
+            const testEl = document.getElementById('metric-test-mse');
+            const r2El = document.getElementById('metric-r2');
+            const statusEl = document.getElementById('metric-status');
+
+            if (trainPts.length < 2 || !activeFn) {
+                trainEl.textContent = '0.000';
+                testEl.textContent = '0.000';
+                r2El.textContent = '0.000';
+                statusEl.textContent = 'Add Points';
+                statusEl.className = 'inline-block mt-1 px-2.5 py-1 rounded-lg text-xs font-extrabold text-center bg-slate-100 text-slate-600';
+                return;
+            }
+
+            const trainStats = computeMetrics(trainPts, activeFn);
+            const evalPool = testPts.length > 0 ? testPts : trainPts;
+            const testStats = computeMetrics(evalPool, activeFn);
+            const allStats = computeMetrics(dataPoints, activeFn);
+
+            trainEl.textContent = trainStats.mse.toFixed(3);
+            testEl.textContent = testStats.mse.toFixed(3);
+            r2El.textContent = allStats.r2.toFixed(3);
+
+            // Diagnose Underfitting vs Good Fit vs Overfitting
+            let statusText = 'Good Fit';
+            let statusClass = 'bg-emerald-100 text-emerald-800';
+
+            const effectiveDeg = selectedModel === 'linear' ? 1 : polyDegree;
+            const effectiveLam = (selectedModel === 'ridge' || selectedModel === 'all') ? ridgeLambda : 0;
+
+            if ( (effectiveDeg === 1 && trainStats.mse > 0.85) || (effectiveLam > 3.5 && trainStats.mse > 0.9) || allStats.r2 < 0.45 ) {
+                statusText = 'Underfitting';
+                statusClass = 'bg-amber-100 text-amber-800';
+            } else if ( (effectiveDeg >= 7 && effectiveLam < 0.08 && testStats.mse > trainStats.mse * 1.65) || testStats.mse > 2.5 ) {
+                statusText = 'Overfitting!';
+                statusClass = 'bg-rose-100 text-rose-800';
+            }
+
+            statusEl.textContent = statusText;
+            statusEl.className = `inline-block mt-1 px-2.5 py-1 rounded-lg text-xs font-extrabold text-center ${statusClass}`;
+        }
+
+        /* -----------------------------------------------------------
+           6. OBSERVATION TABLE RECORDER
+        ----------------------------------------------------------- */
+        function recordObservation() {
+            if (dataPoints.filter(p => !p.isTest).length < 2) {
+                showToast("Please add at least 2 training points first!");
+                return;
+            }
+
+            observationCount++;
+            const emptyRow = document.getElementById('empty-obs-row');
+            if (emptyRow) emptyRow.remove();
+
+            const modelNames = {
+                linear: 'Linear Regression',
+                polynomial: 'Polynomial Regression',
+                ridge: 'Ridge Regression (L2)',
+                all: 'Ridge (Compare Mode)'
+            };
+
+            const degDisplay = selectedModel === 'linear' ? '1' : polyDegree;
+            const lamDisplay = (selectedModel === 'ridge' || selectedModel === 'all') ? ridgeLambda.toFixed(2) : '0.00';
+            const trainMSE = document.getElementById('metric-train-mse').textContent;
+            const testMSE = document.getElementById('metric-test-mse').textContent;
+            const r2 = document.getElementById('metric-r2').textContent;
+            const status = document.getElementById('metric-status').textContent;
+
+            let badgeColor = 'bg-emerald-100 text-emerald-800';
+            if (status.includes('Underfit')) badgeColor = 'bg-amber-100 text-amber-800';
+            if (status.includes('Overfit')) badgeColor = 'bg-rose-100 text-rose-800';
+
+            const tr = document.createElement('tr');
+            tr.className = 'hover:bg-slate-50 transition';
+            tr.innerHTML = `
+                <td class="py-2.5 px-3 font-mono text-xs text-slate-500">${observationCount}</td>
+                <td class="py-2.5 px-3 font-bold text-slate-800">${modelNames[selectedModel]}</td>
+                <td class="py-2.5 px-3 font-mono">${degDisplay}</td>
+                <td class="py-2.5 px-3 font-mono">${lamDisplay}</td>
+                <td class="py-2.5 px-3 font-mono text-blue-700 font-semibold">${trainMSE}</td>
+                <td class="py-2.5 px-3 font-mono text-amber-700 font-semibold">${testMSE}</td>
+                <td class="py-2.5 px-3 font-mono font-bold">${r2}</td>
+                <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-xs font-bold ${badgeColor}">${status}</span></td>
+            `;
+            document.getElementById('observation-tbody').appendChild(tr);
+            showToast(`Reading #${observationCount} added to Observation Table!`);
+        }
+
+        function clearObservations() {
+            observationCount = 0;
+            document.getElementById('observation-tbody').innerHTML = `
+                <tr id="empty-obs-row">
+                    <td colspan="8" class="py-6 text-center text-slate-400 italic text-xs">
+                        No readings recorded yet. Click "+ Add to Observation Table" to log your experiments.
+                    </td>
+                </tr>
+            `;
+        }
+
+        /* -----------------------------------------------------------
+           7. CSV UPLOAD & SAMPLE CSV DOWNLOAD
+        ----------------------------------------------------------- */
+        function handleCSVUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const text = e.target.result.trim();
+                const lines = text.split(/\r?\n/).filter(l => l.trim().length > 0);
+                if (lines.length < 2) {
+                    showToast("CSV must have a header row and data rows.");
+                    return;
+                }
+
+                const headers = lines[0].split(',').map(h => h.trim());
+                const rows = lines.slice(1).map(line => line.split(',').map(cell => parseFloat(cell.trim())));
+
+                parsedCSVData = { headers, rows };
+
+                const xSel = document.getElementById('csv-x-select');
+                const ySel = document.getElementById('csv-y-select');
+                xSel.innerHTML = headers.map((h, i) => `<option value="${i}">${h}</option>`).join('');
+                ySel.innerHTML = headers.map((h, i) => `<option value="${i}">${h}</option>`).join('');
+                if (headers.length > 1) ySel.value = "1";
+
+                document.getElementById('csv-filename-label').textContent = file.name;
+                document.getElementById('csv-column-bar').classList.remove('hidden');
+
+                applyCSVColumns();
+                showToast(`Loaded ${rows.length} rows from ${file.name}`);
+            };
+            reader.readAsText(file);
+        }
+
+        function applyCSVColumns() {
+            if (!parsedCSVData) return;
+            const xIdx = parseInt(document.getElementById('csv-x-select').value);
+            const yIdx = parseInt(document.getElementById('csv-y-select').value);
+
+            const validPairs = parsedCSVData.rows
+                .map(r => ({ x: r[xIdx], y: r[yIdx] }))
+                .filter(p => !isNaN(p.x) && !isNaN(p.y));
+
+            if (validPairs.length < 2) {
+                showToast("Selected columns do not contain enough numeric values.");
+                return;
+            }
+
+            const minX = Math.min(...validPairs.map(p => p.x));
+            const maxX = Math.max(...validPairs.map(p => p.x));
+            const minY = Math.min(...validPairs.map(p => p.y));
+            const maxY = Math.max(...validPairs.map(p => p.y));
+
+            const spanX = (maxX - minX) || 1;
+            const spanY = (maxY - minY) || 1;
+
+            dataPoints = validPairs.map((p, idx) => ({
+                x: 0.08 + 0.84 * ((p.x - minX) / spanX),
+                y: 0.10 + 0.80 * ((p.y - minY) / spanY),
+                isTest: (idx % 3 === 1)
+            }));
+
+            runSimulation();
+        }
+
+        function downloadSampleCSV() {
+            const csvLines = [
+                "Experience_Years,Salary_Lakhs,Productivity_Index",
+                "1.0,4.2,52",
+                "1.5,5.1,58",
+                "2.0,6.8,65",
+                "2.5,8.9,71",
+                "3.0,11.5,79",
+                "3.5,14.2,84",
+                "4.0,16.0,88",
+                "4.5,17.1,90",
+                "5.0,17.5,91",
+                "5.5,17.2,89",
+                "6.0,16.4,85",
+                "6.5,15.0,80",
+                "7.0,13.8,76",
+                "7.5,13.5,74",
+                "8.0,14.4,78",
+                "8.5,16.2,83",
+                "9.0,18.9,92",
+                "9.5,21.5,96"
+            ];
+            const blob = new Blob([csvLines.join("\n")], { type: "text/csv;charset=utf-8;" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "sample_regression_dataset.csv";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            showToast("Downloaded sample_regression_dataset.csv!");
+        }
+
+        /* -----------------------------------------------------------
+           8. MULTI-PAGE .ZIP GENERATOR (7 SEPARATE HTML FILES)
+        ----------------------------------------------------------- */
+        async function downloadMultiPageZip() {
+            const btn = document.getElementById('zip-btn');
+            const origHTML = btn.innerHTML;
+            btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> <span>Packing 7 HTML Pages...</span>`;
+
+            try {
+                const zip = new JSZip();
+                const pages = [
+                    { pageId: 'aim', file: 'index.html', title: 'Aim - ML V-Lab Exp 4' },
+                    { pageId: 'theory', file: 'theory.html', title: 'Theory - ML V-Lab Exp 4' },
+                    { pageId: 'pretest', file: 'pretest.html', title: 'Pre-Test - ML V-Lab Exp 4' },
+                    { pageId: 'procedure', file: 'procedure.html', title: 'Procedure - ML V-Lab Exp 4' },
+                    { pageId: 'simulation', file: 'simulation.html', title: 'Simulation - ML V-Lab Exp 4' },
+                    { pageId: 'posttest', file: 'posttest.html', title: 'Post-Test - ML V-Lab Exp 4' },
+                    { pageId: 'team', file: 'team.html', title: 'Team D12C - ML V-Lab Exp 4' }
+                ];
+
+                const fullSource = document.documentElement.outerHTML;
+
+                pages.forEach(p => {
+                    // Create a standalone HTML file for each page that opens directly on that section
+                    // and links to the other .html files in the sidebar
+                    let pageHTML = "<!DOCTYPE html>\n" + fullSource;
+                    pageHTML = pageHTML.replace(
+                        "let currentPage = 'aim';",
+                        `let currentPage = '${p.pageId}'; window.addEventListener('DOMContentLoaded', () => switchPage('${p.pageId}', '${p.file}'));`
+                    );
+                    zip.file(p.file, pageHTML);
+                });
+
+                // Also add the sample CSV file inside the ZIP
+                zip.file("sample_regression_dataset.csv", "Experience_Years,Salary_Lakhs\n1.0,4.2\n1.5,5.1\n2.0,6.8\n2.5,8.9\n3.0,11.5\n3.5,14.2\n4.0,16.0\n4.5,17.1\n5.0,17.5\n5.5,17.2\n6.0,16.4\n6.5,15.0\n7.0,13.8\n7.5,13.5\n8.0,14.4\n8.5,16.2\n9.0,18.9\n9.5,21.5");
+
+                const content = await zip.generateAsync({ type: "blob" });
+                const url = URL.createObjectURL(content);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = "ML_VLab_Exp4_D12C_DeployReady.zip";
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                showToast("Downloaded 7-Page Deploy-Ready ZIP!");
+            } catch (err) {
+                showToast("Could not create ZIP: " + err.message);
+            } finally {
+                btn.innerHTML = origHTML;
+            }
+        }
+
+        /* -----------------------------------------------------------
+           INITIALIZE ON WINDOW LOAD
+        ----------------------------------------------------------- */
+        window.onload = function() {
+            renderQuiz('pre');
+            renderQuiz('post');
+            setModel('polynomial');
+            loadSampleDataset();
+        };
+    </script>
+
+</body></html>
